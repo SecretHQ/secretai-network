@@ -1,0 +1,12 @@
+syntax = "proto3";
+package secretai.secretai;
+
+import "gogoproto/gogo.proto";
+import "secretai/secretai/params.proto";
+
+option go_package = "secretai/x/secretai/types";
+
+// GenesisState defines the secretai module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package secretai.secretai;
+
+option go_package = "secretai/x/secretai/types";
+
+// Msg defines the Msg service.
+service Msg {}
